@@ -134,7 +134,7 @@
     Адресации так же не должно быть
     ovs-vsctl add-br ovs0  
     ovs-vsctl add-port ovs0 ens3  
-    ovs-vsctl set port ens3 vlan_mode=native-untagged tag=999 trunks=999,100,200  
+    ovs-vsctl set port ens3  trunks=999,100,200  
     ovs-vsctl add-port ovs0 ovs0-vlan999 tag=999 -- set interface ovs0-vlan999 type=internal  
     ifconfig ovs0-vlan999 inet 192.168.0.82/29 up  
  ### ● Сервер HQ-SRV должен находиться в ID VLAN 100  
